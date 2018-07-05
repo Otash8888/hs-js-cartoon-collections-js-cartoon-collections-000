@@ -1,10 +1,12 @@
 function dwarfRollCall(dwarves) {
   var dwarves1 = [];
 
-  for (let i=0; i<dwarves.length; i++){
+  for (let i=0; i<dwarves.length/2; i++){
     dwarves1[i]=`${i+1}. ${dwarves[i]} `
   }
-  
+ 
+ 
+ 
   return dwarves1.join("");
 
 }
@@ -37,7 +39,7 @@ function findTheCheese (foods) {
  
  for (let i=0;i<foods.length;i++){
    
-if ((foods[i]==="cheddar") || (foods[i]==="gouda") || (foods[i]==="camembert") || (foods[i]==="camembert")) {
+if ((foods[i]==="cheddar") || (foods[i]==="gouda") || (foods[i]==="camembert") || (foods[i]==="swiss")) {
    cheese = foods[i];
   i=foods.length;
   }
@@ -47,3 +49,25 @@ else{
 }  
  return cheese
 }
+
+function wordsWithB (arrWords){
+  var arrWithB = [];
+  
+  for (var i = 0; i<arrWords.length; i++){
+   if(arrWords[i].includes("b")){
+     arrWithB.push(arrWords[i]);
+   } 
+  }
+
+  return arrWithB
+}
+
+
+
+
+
+
+
+
+
+
